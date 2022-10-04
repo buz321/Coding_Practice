@@ -13,21 +13,19 @@ proc print data=fibonacci_sequence;
 run;
 
 /* method 2 */
-
-/* modified from documentation for the LAG function */
-data Fibonacci_Lag;
-i=0; F=1; output;       /* initialize and output F[0] */
-/* lag1(F) is missing when _N_=1, but equals F[i-1] in later iters */
-do i = 0 to 7;
-   if i = 0 then F = 0;
-   if i = 1 then F = 1;
-   else F = sum(F, lag(F));  /* iterate: F(i) = F(i-1) + F(i-2) */
-   output;
-end;
+/* from 0 */
+data fibonacci_sequence;
+do i = 0 to 10;
+    fib = sum(fib, lag(fib));
+    if i eq 1 then fib = 1;
+    if i eq 0 then fib = 0;
+    output;
+    end;
 run;
 
  /* test*/
-proc print noobs; run;
+proc print data=fibonacci_sequence; 
+run;
 
 /* Loop */
 %macro fib_sec(n);

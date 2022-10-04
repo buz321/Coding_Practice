@@ -20,8 +20,8 @@ i=0; F=1; output;       /* initialize and output F[0] */
 /* lag1(F) is missing when _N_=1, but equals F[i-1] in later iters */
 do i = 0 to 7;
    if i = 0 then F = 0;
-   F = sum(F, lag(F));  /* iterate: F(i) = F(i-1) + F(i-2) */
    if i = 1 then F = 1;
+   else F = sum(F, lag(F));  /* iterate: F(i) = F(i-1) + F(i-2) */
    output;
 end;
 run;

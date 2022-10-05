@@ -1,5 +1,6 @@
+/* calculate the average value for rows that contain certain value or name */
 proc sql;
-    select var1, var2, mean(var3) as mean_var3
-    from my_data
-    group by var1, var2;
+    SELECT avg(Arrears_Amt) AS average_arrears_amount
+    from 'Table A'
+    WHERE Date LIKE '%Oct%'
 quit;

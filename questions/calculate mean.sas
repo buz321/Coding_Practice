@@ -1,6 +1,7 @@
 /* calculate the average value for rows that contain certain value or name */
 proc sql;
-    SELECT avg(Arrears_Amt) AS average_arrears_amount
-    from 'Table A'
-    WHERE Date LIKE '%Oct%'
+   SELECT Account_test, COUNT(Arrears_Amt) AS num_of_account_over_250
+    FROM test2
+    Where Arrears_Amt > 250
+    GROUP BY Account_test
 quit;

@@ -1,4 +1,5 @@
 ## Join the table itself, and break into 3 sectors. Then, consider the possible sequence (e.g. in the beginning of the consecutive 3 days, or the middle, or the last)
+
 ``` SAS
 PROC SQL;
 SELECT distinct t1.*

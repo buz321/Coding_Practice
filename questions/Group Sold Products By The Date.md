@@ -11,7 +11,6 @@ QUIT;
 ``` 
 
 ## Answer
-Output: 
 <img width="458" alt="스크린샷 2022-10-11 오전 6 17 47" src="https://user-images.githubusercontent.com/107760647/194953727-6e032c64-dbd5-45e1-b7ab-18237a984e38.png">
 
 Reference:

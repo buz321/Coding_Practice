@@ -12,13 +12,7 @@ QUIT;
 
 ## Answer
 Output: 
-+------------+----------+------------------------------+
-| sell_date  | num_sold | products                     |
-+------------+----------+------------------------------+
-| 2020-05-30 | 3        | Basketball,Headphone,T-shirt |
-| 2020-06-01 | 2        | Bible,Pencil                 |
-| 2020-06-02 | 1        | Mask                         |
-+------------+----------+------------------------------+
+<img width="458" alt="스크린샷 2022-10-11 오전 6 17 47" src="https://user-images.githubusercontent.com/107760647/194953727-6e032c64-dbd5-45e1-b7ab-18237a984e38.png">
 
 Reference:
 https://leetcode.com/problems/group-sold-products-by-the-date/

@@ -2,7 +2,7 @@
 
 ``` SAS
 PROC SQL;
-SELECT sell_date, COUNT(DISTINCT (product)) as num_sold ,
+SELECT sell_date, COUNT(DISTINCT product) as num_sold ,
     
     GROUP_CONCAT(DISTINCT product order by product ASC) as products
     

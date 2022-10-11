@@ -8,7 +8,7 @@ SELECT user_id, MAX(time_stamp) AS last_stamp
       GROUP BY user_id;
 QUIT;
 ```
-### Example
+### Example:
 <img width="284" alt="스크린샷 2022-10-12 오전 7 15 01" src="https://user-images.githubusercontent.com/107760647/195208061-d90d9f07-ab41-459f-aec9-77dc3d1e3ad4.png">
 
 

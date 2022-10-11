@@ -1,4 +1,4 @@
-##Write an SQL query to reformat the table such that there is a department id column and a revenue column for each month. Return the result table in any order.
+## Write an SQL query to reformat the table such that there is a department id column and a revenue column for each month. Return the result table in any order.
 
 ``` MySQL
 PROC SQL;
@@ -19,7 +19,7 @@ FROM department
 GROUP BY id;
 QUIT;
 ```
-###Example
+### Example
 <img width="589" alt="스크린샷 2022-10-12 오전 3 41 59" src="https://user-images.githubusercontent.com/107760647/195173333-b410a38f-ffef-4859-8e0d-6c6e64a629d1.png">
 
 

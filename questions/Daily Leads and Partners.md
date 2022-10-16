@@ -1,4 +1,7 @@
-## make distinct sum values 
+## Write an SQL query that will, for each date_id and make_name, return the number of distinct lead_id's and distinct partner_id's.
+
+Return the result table in any order.
+
 ``` SAS
 PROC SQL;
 SELECT data_id, make_name, DISTINCT(SUM(lead_id)) AS unique_leads, DISTINCT(SUM(partne_id)) AS unique_partners

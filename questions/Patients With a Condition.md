@@ -19,3 +19,6 @@ QUIT;
 
 Reference:
 https://leetcode.com/problems/patients-with-a-condition/
+
+#### Note:
+* To caputure conditions that have certain words, you can use '%'.
